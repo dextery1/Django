@@ -19,13 +19,11 @@
         </a> | 
         <a href="/about">
             <span role="img" aria-label="About" title="About">😀</span>
-        </a> | 
-        <a href="{% url 'posts:list' %}">
-            <span role="img" aria-label="Posts" title="Posts">📰</span>
-        </a> | 
-        
+        </a> |
         {% if user.is_authenticated %}
-            
+            <a href="{% url 'posts:list' %}">
+                <span role="img" aria-label="Posts" title="Posts">📰</span>
+            </a> | 
             <a href="{% url 'posts:new-post' %}">
                 <span role="img" aria-label="New Post" title="New Post">🆕</span>
             </a> |

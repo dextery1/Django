@@ -13,6 +13,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='post',
             name='banner',
-            field=models.ImageField(blank=True, default='fallback.bng', upload_to=''),
+            field=models.ImageField(blank=True, default='fallback.png', upload_to=''),
         ),
     ]

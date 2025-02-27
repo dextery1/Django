@@ -1,7 +1,7 @@
 from django.http import HttpResponseForbidden
 
 ALLOWED_IPS = [
-    # '103.39.127.50',
+    '103.39.127.0/24',
     'localhost',
     '127.0.0.1'  # Add your allowed IP addresses here
     # 'localhost',
